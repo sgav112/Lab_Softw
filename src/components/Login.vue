@@ -1,16 +1,49 @@
 <template>
     <div>
         <button @click="showModal = true">Abrir modal</button>
-        <div v-if="showModal" class="modal" @click.self="showModal = false">
+        <!--v-if="showModal" class="modal" @click.self="showModal = false"-->
+        <div>
             <div class="modal-content">
                 <button class="close-button" @click="showModal = false">x</button>
-                <h2>Iniciar 2</h2>
-                <form @submit.prevent="login">
+                <form class="form" @submit.prevent="login">
                     <div class="Arriba">
-                        
+                        <div class="texto">
+                            <h1>Iniciar sesión/Registrarse</h1>
+                            <div class="columnas">
+                                <div class="izquierda">
+                                    <img alt="Seguridad" src="@/assets/Candado.png" width="15" height="15" />
+                                </div>
+                                <div class="derecha">
+                                    <p>Todos los datos se cifrarán</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="columnas_2">
+                            <div class="zona1">
+                                <div class="imagen"><img alt="Entregas"  src="@/assets/camion-de-reparto.png"  width="30" height="30"/></div>
+                                <div class="texto1">Envío gratis</div>
+                                <div class="texto2">En todos los pedidos</div>
+                            </div>
+                            <div class="zona2">
+                                <div class="imagen"><img alt="Devoluciones" src="@/assets/devoluciones-faciles.png" width="30" height="30"/></div>
+                                <div class="texto1">Devoluciones gratis </div>
+                                <div class="texto2">Hasta 90 días*</div>
+                            </div>
+                        </div>
+
+
                     </div>
-                    <div class="formulario"></div>
-                    <img alt="Vue logo" class="logo" src="@/assets/Candado.png" width="125" height="125" />
+                    <div class="formulario">
+                        <div class="columnas">
+                            <div class="Inputcito"><input type="text" v-model="username" placeholder="Username"></div>
+                            <div class="Inputcito"><input type="password" v-model="password" placeholder="Password"></div>
+                            
+                            
+                        </div>
+                        
+                        <button type="submit">Submit</button>
+                    </div>
+
                     <div class="abajo">
 
                     </div>
@@ -44,6 +77,91 @@ export default {
 </script>
 
 <style>
+* {
+    color: black;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+h1 {
+    text-align: center;
+}
+
+.texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.columnas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.izquierda {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.derecha {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.derecha p {
+    color: #1AC64F;
+}
+
+
+.columnas_2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 20%;
+    margin-bottom: 10px;
+}
+
+.imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffd5ab;
+    border-radius: 100%;
+    width: 60px;
+    height:60px;
+}
+
+.zona1, .zona2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.texto1{
+    font-size: 12px;
+}
+
+
+
+
+
+
 .modal {
     position: fixed;
     top: 0;
@@ -60,10 +178,12 @@ export default {
     background-color: white;
     padding: 20px;
     border-radius: 5px;
-    position: relative;}
-    h2 {
-        margin-bottom: 20px;
-        color: blue;
+    position: relative;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: blue;
 }
 
 .close-button {
