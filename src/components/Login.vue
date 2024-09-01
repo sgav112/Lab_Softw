@@ -1,18 +1,19 @@
 <template>
     <div>
         <button @click="showModal = true">Abrir modal</button>
-
-        <div v-if="showModal" class="modal">
+        <div v-if="showModal" class="modal" @click.self="showModal = false">
             <div class="modal-content">
+                <button class="close-button" @click="showModal = false">x</button>
                 <h2>Iniciar sesión</h2>
                 <form @submit.prevent="login">
-                    <label for="username">Usuario:</label>
-                    <input type="text" id="username" v-model="username" required>
+                    <div class="Arriba">
+                        
+                    </div>
+                    <div class="formulario"></div>
+                    <img alt="Vue logo" class="logo" src="@/assets/Candado.png" width="125" height="125" />
+                    <div class="abajo">
 
-                    <label for="password">Clave:</label>
-                    <input type="password" id="password" v-model="password" required>
-
-                    <button type="submit">Iniciar sesión</button>
+                    </div>
                 </form>
             </div>
         </div>
@@ -21,7 +22,7 @@
 
 <script>
 export default {
-    name:'Login',
+    name: 'Login',
     data() {
         return {
             showModal: false,
@@ -59,5 +60,19 @@ export default {
     background-color: white;
     padding: 20px;
     border-radius: 5px;
+    position: relative;}
+    h2 {
+        margin-bottom: 20px;
+        color: blue;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
 }
 </style>
