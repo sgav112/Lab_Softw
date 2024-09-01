@@ -4,7 +4,7 @@
         <div v-if="showModal" class="modal" @click.self="showModal = false">
             <div class="modal-content">
                 <button class="close-button" @click="showModal = false">x</button>
-                <h2>Iniciar sesión</h2>
+                <h2>Iniciar 2</h2>
                 <form @submit.prevent="login">
                     <div class="Arriba">
                         
