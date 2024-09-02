@@ -1,9 +1,9 @@
 <script setup>
-import Login from '../components/Login.vue'
+import Header from '../components/MainHeader.vue'
 </script>
 
 <template>
   <main>
-    <Login />
+    <Header />
   </main>
 </template>
