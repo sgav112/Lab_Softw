@@ -1,10 +1,9 @@
 <template>
     <div>
-        <button @click="showModal = true">Abrir modal</button>
-        <div v-if="showModal" class="modal" @click.self="showModal = false">
+        <div class="modal" @click.self="$emit('close')">
             <div class="modal-content">
-                <button class="close-button" @click="showModal = false">x</button>
-                <form class="form" @submit.prevent="login">
+            <button class="close-button" @click="$emit('close')">x</button>
+            <form class="form" @submit.prevent="login">
                     <div class="Arriba">
                         <div class="texto">
                             <h1>Iniciar sesión/Registrarse</h1>

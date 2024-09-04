@@ -1,6 +1,5 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import Login from './components/Login.vue'
 </script>
 
 <template>
@@ -10,7 +9,7 @@ import Login from './components/Login.vue'
 <style scoped>
 header {
   line-height: 1.5;
-  max-height: 100vh;
+  max-height: 100vh; 
 }
 
 .logo {
