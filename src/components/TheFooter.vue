@@ -65,29 +65,29 @@
       <div class="mt-4">
         <h5>Certificación de seguridad</h5>
         <div class="security-icons">
-          <img src="/path-to-pci-dss-icon.png" alt="PCI DSS" />
-          <img src="/path-to-visa-icon.png" alt="Visa" />
-          <img src="/path-to-mastercard-icon.png" alt="Mastercard" />
-          <img src="/path-to-id-check-icon.png" alt="ID Check" />
-          <img src="/path-to-safekey-icon.png" alt="SafeKey" />
-          <img src="/path-to-jcb-icon.png" alt="JCB" />
-          <img src="/path-to-trustedsite-icon.png" alt="TrustedSite" />
+          <img src="https://via.placeholder.com/100" alt="PCI DSS" />
+          <img src="https://via.placeholder.com/100" alt="Visa" />
+          <img src="https://via.placeholder.com/100" alt="Mastercard" />
+          <img src="https://via.placeholder.com/100" alt="ID Check" />
+          <img src="https://via.placeholder.com/100" alt="SafeKey" />
+          <img src="https://via.placeholder.com/100" alt="JCB" />
+          <img src="https://via.placeholder.com/100" alt="TrustedSite" />
         </div>
       </div>
 
       <div class="mt-4">
         <h5>Aceptamos</h5>
         <div class="payment-icons">
-          <img src="/path-to-visa-icon.png" alt="Visa" />
-          <img src="/path-to-mastercard-icon.png" alt="Mastercard" />
-          <img src="/path-to-codensa-icon.png" alt="Codensa" />
-          <img src="/path-to-maestro-icon.png" alt="Maestro" />
-          <img src="/path-to-amex-icon.png" alt="American Express" />
-          <img src="/path-to-discover-icon.png" alt="Discover" />
-          <img src="/path-to-bancolombia-icon.png" alt="Bancolombia" />
-          <img src="/path-to-jcb-icon.png" alt="JCB" />
-          <img src="/path-to-applepay-icon.png" alt="Apple Pay" />
-          <img src="/path-to-googlepay-icon.png" alt="Google Pay" />
+          <img src="https://via.placeholder.com/100" alt="Visa" />
+          <img src="https://via.placeholder.com/100" alt="Mastercard" />
+          <img src="https://via.placeholder.com/100" alt="Codensa" />
+          <img src="https://via.placeholder.com/100" alt="Maestro" />
+          <img src="https://via.placeholder.com/100" alt="American Express" />
+          <img src="https://via.placeholder.com/100" alt="Discover" />
+          <img src="https://via.placeholder.com/100" alt="Bancolombia" />
+          <img src="https://via.placeholder.com/100" alt="JCB" />
+          <img src="https://via.placeholder.com/100" alt="Apple Pay" />
+          <img src="https://via.placeholder.com/100" alt="Google Pay" />
         </div>
       </div>
 
